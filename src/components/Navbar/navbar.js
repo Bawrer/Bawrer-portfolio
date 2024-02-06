@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
 
       <button className='desktopMenubtn'>
-      <img className='desktopMenuImg' alt=''/> toggle </button>
+      <img className='desktopMenuImg' alt=''/> toggle button </button>
     </nav>
     
   )
