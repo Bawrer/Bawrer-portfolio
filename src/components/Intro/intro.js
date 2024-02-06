@@ -3,9 +3,12 @@ import './intro.css';
 
 const Intro = () => {
   return (
-    <div>
-      
+    <section id='intro'>
+    <div className='introContent'>
+
     </div>
+      <img src='' alt='' className='' />
+    </section>
   )
 }
 
