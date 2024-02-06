@@ -1,14 +1,13 @@
 import React from 'react';
 import './navbar.css';
-import logo from '../../assets/logo.png';
+ 
 import {Link} from 'react-scroll';
-import toggleImg from '../'
+ 
 
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <button className='desktopMenubtn'>
-      <img className='desktopMenuImg' alt=''/> toggle button </button>
+      <button className='desktopMenubtn'>On  &  Off </button>
       <div className="desktopMenu">
       
             <Link className="desktopMenuListItem">Home</Link>
@@ -19,7 +18,6 @@ const Navbar = () => {
 
       </div>
 
-      <img src={logo} alt='logo' className='logo'/>
      
     </nav>
     
