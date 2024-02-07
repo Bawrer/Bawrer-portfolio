@@ -4,11 +4,13 @@
    box-sizing: border-box;
    text-decoration: none;
    background: transparent;
+   font-family: 'Poppins',sans-serif;
 }
 
 body{
-   background: rgb(30, 30, 30);
+   background: rgb(38, 32, 49);
    color: white;
    overflow: hidden;
    overflow-y: scroll;
 }
+
