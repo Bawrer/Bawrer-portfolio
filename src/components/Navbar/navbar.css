@@ -32,7 +32,15 @@
 }
 
 .desktopMenuListItem:hover{
-   color: yellow;
+   color: rgb(102, 102, 65);
    padding-bottom: 0.5rem;
-   border-bottom: 3px solid yellow;
+   border-bottom: 3px solid rgb(85, 85, 55);
 }
+
+.colorOn {
+   background-color: #011401; /* Green color */
+ }
+ 
+ .colorOff {
+   background-color: #596969; /* Red color */
+ }
