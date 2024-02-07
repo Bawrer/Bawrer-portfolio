@@ -20,4 +20,7 @@ body{
    .bg{
       right: -10vw;
    }
+   .Welcome{
+      font-size: 4.5vw;
+   }
 }
