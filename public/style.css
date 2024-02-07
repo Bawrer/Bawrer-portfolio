@@ -20,7 +20,16 @@ body{
    .bg{
       right: -10vw;
    }
-   .Welcome{
+   .welcome{
       font-size: 4.5vw;
    }
+}
+
+
+
+@media screen and (max-width:840px){
+   .bg{
+      right: -20vw;
+   }
+   
 }
