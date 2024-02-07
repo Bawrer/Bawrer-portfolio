@@ -22,7 +22,7 @@
  .introContent {
    width: 60%; /* Adjust the width as needed */
    padding: 2rem;
-   font-size: 1.5rem; /* Adjust the font size as needed */
+   font-size: 2rem; /* Adjust the font size as needed */
    font-weight: 700;
    display: flex;
    flex-direction: column;
@@ -31,6 +31,7 @@
  }
  
  .welcome {
+   color: rgb(118, 129, 136);
    font-size: 2rem;
    font-weight: 700;
    margin-bottom: 1rem;
@@ -38,8 +39,9 @@
  }
  
  .introName {
-   color: yellow;
-   font-size:x-large;
+   color: rgb(121, 38, 110);
+   font-size: 2rem;
+   font-weight: 800;
  }
  
  .introPara {
