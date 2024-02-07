@@ -15,3 +15,9 @@ body{
 }
 
 /*Media quiries*/
+
+@media screen and (max-width:840px){
+   .bg{
+      right: -10vw;
+   }
+}
