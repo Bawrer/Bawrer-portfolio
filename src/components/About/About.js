@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import aboutImage from '../../assets/IMG-20231216-WA0080.jpg'; // Importing the image
 import './About.css';
-import aboutImage from '../../assets/WhatsApp Image 2023-10-14 at 12.45.56 PM.jpeg'; // Importing the image
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('skills');
@@ -16,10 +16,13 @@ const About = () => {
           <div className="about-col-1">
             {/* Displaying the image */}
             <img src={aboutImage} alt="profile" className="about-image" />
+            {/* Button to download CV */}
+            <button className="download-cv-button">Download CV</button>
           </div>
           <div className="about-col-2">
-            <h1 className="sub-title">Get to know</h1>
+            <h1 className="sub-title">Get to know me</h1>
             <div className="tab-titles">
+            
               {/* Your tab links */}
               <p
                 className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
