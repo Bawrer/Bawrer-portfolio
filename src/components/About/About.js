@@ -1,10 +1,105 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css';
 
 const About = () => {
+  const [activeTab, setActiveTab] = useState('skills');
+
+  const openTab = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
-    <div>about</div>
-  )
-}
+    <div className="about" id="about">
+      <div className="container">
+        <div className="row">
+          <div className="about-col-1">
+            <img src="https://via.placeholder.com/300" alt="profile" />
+          </div>
+          <div className="about-col-2">
+            <h1 className="sub-title">Get to know</h1>
+            <div className="tab-titles">
+              <p
+                className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
+                onClick={() => openTab('skills')}
+              >
+                Skills
+              </p>
+              <p
+                className={`tab-links ${activeTab === 'experience' ? 'active-link' : ''}`}
+                onClick={() => openTab('experience')}
+              >
+                Experience
+              </p>
+              <p
+                className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}
+                onClick={() => openTab('education')}
+              >
+                Education
+              </p>
+            </div>
+            <div className={`tab-contents ${activeTab === 'skills' ? 'active-tab' : ''}`}>
+              <ul>
+                <li>
+                  <span>Web development</span>
+                  <br />
+                  Responsive Design Email Subscribe form
+                </li>
+                <li>
+                  <span>Blog</span>
+                  <br />
+                  Blog (HTML, CSS, javaScript, C++, python)
+                </li>
+                <li>
+                  <span>Add Design</span>
+                  <br />
+                  Currently Working on a Messaging App (Like WhatsApp)
+                </li>
+                <li>
+                  <span>Functional Portfolio</span>
+                  <br />
+                  Using (HTML, CSS, js)
+                </li>
+              </ul>
+            </div>
+            <div className={`tab-contents ${activeTab === 'experience' ? 'active-tab' : ''}`}>
+              <ul>
+                <li>
+                  <span>Internship</span>
+                  <br />
+                  I am a candidate at CAPACITI career Tech Accelerator
+                  <br />
+                  2023-224
+                </li>
+              </ul>
+            </div>
+            <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`}>
+              <ul>
+                <li>
+                  <span>High School</span>
+                  <br />
+                  Bekizulu sss
+                  <br />
+                  2017
+                </li>
+                <li>
+                  <span>University</span>
+                  <br />
+                  Walter Sisulu University
+                </li>
+                <li>
+                  <span>Course</span>
+                  <br />
+                  BSc in Physics
+                  <br />
+                  2019-2022
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default About;

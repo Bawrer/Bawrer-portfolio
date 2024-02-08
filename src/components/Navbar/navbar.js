@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './navbar.css'; // Import external CSS file
 import { Link } from 'react-scroll';
+import './navbar.css'; // Import external CSS file
 
 const Navbar = () => {
   // State to track the current color
