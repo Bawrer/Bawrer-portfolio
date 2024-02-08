@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './About.css';
+import aboutImage from '../../assets/WhatsApp Image 2023-10-14 at 12.45.56 PM.jpeg'; // Importing the image
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('skills');
@@ -13,11 +14,13 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="about-col-1">
-            <img src="https://via.placeholder.com/300" alt="profile" />
+            {/* Displaying the image */}
+            <img src={aboutImage} alt="profile" className="about-image" />
           </div>
           <div className="about-col-2">
             <h1 className="sub-title">Get to know</h1>
             <div className="tab-titles">
+              {/* Your tab links */}
               <p
                 className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
                 onClick={() => openTab('skills')}
@@ -38,6 +41,7 @@ const About = () => {
               </p>
             </div>
             <div className={`tab-contents ${activeTab === 'skills' ? 'active-tab' : ''}`}>
+              {/* Skills content */}
               <ul>
                 <li>
                   <span>Web development</span>
@@ -62,6 +66,7 @@ const About = () => {
               </ul>
             </div>
             <div className={`tab-contents ${activeTab === 'experience' ? 'active-tab' : ''}`}>
+              {/* Experience content */}
               <ul>
                 <li>
                   <span>Internship</span>
@@ -73,6 +78,7 @@ const About = () => {
               </ul>
             </div>
             <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`}>
+              {/* Education content */}
               <ul>
                 <li>
                   <span>High School</span>

@@ -13,13 +13,14 @@
    flex-basis: 35%;
  }
  
- .about-col-1 img {
+ .about-image {
    width: 100%;
    border-radius: 15px;
  }
  
  .about-col-2 {
-   width: 60%;
+   flex-basis: calc(65% - 20px); /* Adjusted width to accommodate margin */
+   margin-left: 20px; /* Added margin between columns */
  }
  
  .sub-title {
