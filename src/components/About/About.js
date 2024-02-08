@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import aboutImage from '../../assets/IMG-20231216-WA0080.jpg'; // Importing the image
 import './About.css';
-
+ 
+ 
 const About = () => {
   const [activeTab, setActiveTab] = useState('skills');
 
