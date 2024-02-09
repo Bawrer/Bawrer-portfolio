@@ -1,53 +1,102 @@
-#intro {
-   position: relative;
+#header{
+   position:relative;
    width: 100%;
-   max-width: 75rem;
-   height: 80vh;
-   overflow: hidden;
-   padding: 1rem 4rem;
+   height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+   padding: 10px 10%;
+}
+
+nav{
    display: flex;
    align-items: center;
- }
- 
- .bg {
+   justify-content: space-between;
+   flex-wrap: wrap;
+  
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.993); /* Adjust the background color as needed */
+
+}
+
+
+
+
+.logo{
+   width: 140px;
+}
+nav ul li{
+   display: inline-block;
+   list-style: none;
+   margin: 10px 20px;
+}
+
+nav ul li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+   position: relative;
+}
+
+nav ul li a::after{
+   content: '';
+   width: 0;
+   height: 3px;
+   background: #ff004f;
+   left: 0;
    position: absolute;
-   top: 0;
-   right: 0;
-   z-index: -1;
-   object-fit: cover;
-   height: 100%;
-   width: auto;
+   bottom: -6px; 
+   transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+   width: 100%;
+}
+
+.header-tex{
+   margin-top: 20%;
+   font-size: 30px;
+   color: #ffffff;
+
+}
+
+.header-tex h1{
+   font-size: 60px;
+   margin-top: 20px;
+}
+
+.header-tex h1 span{
+   color:#ff004f;
+}
+
+#header .logo {
+   font-size: 24px; /* Adjust the font size as needed */
+   text-decoration: none;
+   color: #cec0c0; /* Text color for the logo */
+   font-weight: bold;
  }
  
- .introContent {
-   width: 60%; /* Adjust the width as needed */
-   padding: 2rem;
-   font-size: 2rem; /* Adjust the font size as needed */
-   font-weight: 700;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; /* Center content horizontally */
+ #header .logo:hover {
+   color: #f00466; /* Text color for the logo on hover */
  }
  
- .welcome {
-   color: rgb(118, 129, 136);
-   font-size: 2rem;
-   font-weight: 700;
-   margin-bottom: 1rem;
-   margin-top: 1rem; /* Adjust top margin to push welcome message closer to the top */
- }
+ @media (max-width: 768px) {
+   #hamburger-menu {
+     display: block;
+   }
  
- .introName {
-   color: rgb(121, 38, 110);
-   font-size: 2rem;
-   font-weight: 800;
- }
+   #menu-links {
+     display: none;
+   }
  
- .introPara {
-   font-size: 1rem; /* Adjust the font size as needed */
-   font-weight: 900;
-   text-align: center; /* Center text */
-   line-height: 4; /* Adjust line height as needed */
+   #hamburger-input:checked ~ #menu-links {
+     display: block;
+   }
  }
- 

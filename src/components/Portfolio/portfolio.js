@@ -43,7 +43,7 @@ const Portfolio = () => (
           link="#"
         />
 
-<WorkItem
+        <WorkItem
            imageSrc={image4}
           title="group website"
           description="A group website created by 5stars to help students."
