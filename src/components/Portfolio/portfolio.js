@@ -1,6 +1,9 @@
 import React from 'react';
  import './portfolio.css'
  import image1 from '../../assets/Screenshot (72).png'
+ import image2 from '../../assets/Screenshot (75).png'
+ import image3 from '../../assets/project 1.png'
+ 
 
 const WorkItem = ({ imageSrc, title, description, link }) => (
   <div className="work">
@@ -19,19 +22,19 @@ const Portfolio = () => (
       <h1 className="sub-title">My Work</h1>
       <div className="work-list">
         <WorkItem
-          imageSrc={image1}
+          imageSrc={image2}
           title="Social Media App"
           description="Chatbot that provides people who have questions about our website with automated responses."
           link="#"
         />
         <WorkItem
-          imageSrc="../../"
+          imageSrc= {image3} 
           title="Bank App"
           description="Bank app that allows customers to deposit and withdraw money."
           link="#"
         />
         <WorkItem
-          imageSrc=""
+          imageSrc={image1}
           title="Metric Converter"
           description="Metric converter that allows people from different parts of the world to be able to convert units from one to another."
           link="#"
