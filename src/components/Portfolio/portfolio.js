@@ -1,5 +1,6 @@
 import React from 'react';
  import './portfolio.css'
+ import image1 from '../../assets/Screenshot (72).png'
 
 const WorkItem = ({ imageSrc, title, description, link }) => (
   <div className="work">
@@ -18,7 +19,7 @@ const Portfolio = () => (
       <h1 className="sub-title">My Work</h1>
       <div className="work-list">
         <WorkItem
-          imageSrc="./assets/Screenshot (75).png"
+          imageSrc={image1}
           title="Social Media App"
           description="Chatbot that provides people who have questions about our website with automated responses."
           link="#"
@@ -30,7 +31,7 @@ const Portfolio = () => (
           link="#"
         />
         <WorkItem
-          imageSrc="/assets/Screenshot (72).png"
+          imageSrc=""
           title="Metric Converter"
           description="Metric converter that allows people from different parts of the world to be able to convert units from one to another."
           link="#"
