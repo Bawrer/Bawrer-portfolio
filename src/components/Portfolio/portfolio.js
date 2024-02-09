@@ -3,6 +3,9 @@ import React from 'react';
  import image1 from '../../assets/Screenshot (72).png'
  import image2 from '../../assets/Screenshot (75).png'
  import image3 from '../../assets/project 1.png'
+ import image4 from '../../assets/Screenshot (73).png'
+ import image5 from '../../assets/Screenshot (2).png'
+ import image6 from '../../assets/Screenshot (76).png'
  
 
 const WorkItem = ({ imageSrc, title, description, link }) => (
@@ -41,21 +44,21 @@ const Portfolio = () => (
         />
 
 <WorkItem
-          imageSrc="./images/Screenshot (75).png"
-          title="Social Media App"
-          description="Chatbot that provides people who have questions about our website with automated responses."
+           imageSrc={image4}
+          title="group website"
+          description="A group website created by 5stars to help students."
           link="#"
         />
         <WorkItem
-          imageSrc="../../"
-          title="Bank App"
-          description="Bank app that allows customers to deposit and withdraw money."
+         imageSrc= {image5} 
+          title="Maths Calculator"
+          description="Maths calculator for numeric operations."
           link="#"
         />
         <WorkItem
-          imageSrc="/assets/Screenshot (72).png"
-          title="Metric Converter"
-          description="Metric converter that allows people from different parts of the world to be able to convert units from one to another."
+          imageSrc= {image6}  
+          title="Tax calculator"
+          description="Tax calculator project to help people to calculate their annual tax."
           link="#"
         />
         {/* Add more WorkItem components for additional works */}
