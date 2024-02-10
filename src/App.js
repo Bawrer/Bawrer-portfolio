@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import Cerificates from "./components/Certificates/certificates";
  
 import Intro from "./components/Intro/intro";
  
@@ -12,6 +13,7 @@ function App() {
       <Intro/>
        <About/>
        <Portfolio/>
+       <Cerificates/>
     </div>
   )
 }
