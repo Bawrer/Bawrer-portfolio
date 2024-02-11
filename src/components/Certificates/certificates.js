@@ -5,7 +5,7 @@ import cert2 from '../../assets/git (1).png'
  
 
 const WorkItem = ({ imageSrc, title, description, link }) => (
-  <div className="work">
+  <div className="cert" id='cert'>
     <img src={imageSrc} alt={title} height="250px" />
     <div className="layer">
       <h3>{title}</h3>
