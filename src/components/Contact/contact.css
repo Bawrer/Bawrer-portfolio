@@ -4,11 +4,15 @@
 }
  .contact-left{
 
-flex-basis: 35%;
+flex-basis: 45%;
 
 }
+
+.left-and-right{
+   display: flex;
+}
 .contact-right{
-   flex-basis: 60%;
+   flex-basis: 50%;
 }
 
 .contact-left p{

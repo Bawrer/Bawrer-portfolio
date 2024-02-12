@@ -24,14 +24,16 @@ const Certificates = () => (
         <WorkItem
           imageSrc={img2}
           title="Intro to python"
-          description="introdction to python awarded  certificate."
+          description="This certicate shows that I have succesfully completed a course by demostrating theoretical and practical understanding of Intro to python."
           link="#"
         />
         <WorkItem
           imageSrc= {img1} 
           title="IBM certificate"
-          description="IBM certicficate through self-taught."
-          link="#"
+          description="Through self-paced learning, this badge earner has displayed an understanding of topics such as Git concepts,
+                      using command-line, advantages of using GIT,
+                      installing and running GIT on you local computer."
+          link="https://www.credly.com/badges/411d2f3c-c187-4eeb-8b23-cf6dfee30c86/print"
         />
 
       </div>

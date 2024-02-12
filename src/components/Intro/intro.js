@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './intro.css';
+ 
 
 const Intro = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +15,7 @@ const Intro = () => {
 
   return (
     <header id="header">
+
       <div className="container">
         <nav>
           <img src="/images" alt="" className="logo" />
@@ -29,13 +31,10 @@ const Intro = () => {
           <i className="fa-solid fa-bars" onClick={openMenu}></i>
         </nav>
 
-        
-
         <div className="header-tex">
           <p>Fullstack software developer</p>
           <h1>Hi, I'm <span>Bonginkosi</span><br /> Zweni From South Africa</h1>
         </div>
-         
       </div>
     </header>
   );

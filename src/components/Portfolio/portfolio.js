@@ -28,38 +28,38 @@ const Portfolio = () => (
           imageSrc={image2}
           title="Social Media App"
           description="Chatbot that provides people who have questions about our website with automated responses."
-          link="#"
+          link="https://github.com/Bawrer/5stars_bot"
         />
         <WorkItem
           imageSrc= {image3} 
           title="Bank App"
           description="Bank app that allows customers to deposit and withdraw money."
-          link="#"
+          link="https://github.com/Bawrer/BankingApp"
         />
         <WorkItem
           imageSrc={image1}
           title="Metric Converter"
           description="Metric converter that allows people from different parts of the world to be able to convert units from one to another."
-          link="#"
+          link="https://github.com/Bawrer/5Stars_UnitConverter"
         />
 
         <WorkItem
            imageSrc={image4}
           title="group website"
           description="A group website created by 5stars to help students."
-          link="#"
+          link="https://github.com/Bawrer/group-Website"
         />
         <WorkItem
          imageSrc= {image5} 
           title="Maths Calculator"
           description="Maths calculator for numeric operations."
-          link="#"
+          link="https://github.com/Bawrer/Borah_and_Vuyo-s_simpl_Calcultor"
         />
         <WorkItem
           imageSrc= {image6}  
           title="Tax calculator"
           description="Tax calculator project to help people to calculate their annual tax."
-          link="#"
+          link="https://github.com/Bawrer/TaxtCalculator"
         />
         {/* Add more WorkItem components for additional works */}
       </div>

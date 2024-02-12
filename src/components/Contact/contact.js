@@ -38,9 +38,12 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="container">
+
         <div className="row">
+        <h1 className="sub-title">Get linkup with me</h1>
+          <div className='left-and-right'>
           <div className="contact-left">
-            <h1 className="sub-title">Get linkup with me</h1>
+        
             <p>
               <i className="fa-solid fa-paper-plane"></i>zwenibonginkosi@gmail.com
             </p>
@@ -91,6 +94,7 @@ const Contact = () => {
               </button>
             </form>
             <span id="msg">{msg}</span>
+          </div>
           </div>
 
           <div class="copyright">

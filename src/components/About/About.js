@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import aboutImage from '../../assets/IMG-20231216-WA0080.jpg'; // Importing the image
 import './About.css';
+import cv from '../../assets/'
+ 
  
  
 const About = () => {
@@ -18,7 +20,7 @@ const About = () => {
             {/* Displaying the image */}
             <img src={aboutImage} alt="profile" className="about-image" />
             {/* Button to download CV */}
-            <a href="/Bonginkosi's CV.pdf" download className="btn btn2">
+            <a href={} download className="btn btn2">
               Download My CV
             </a>
           </div>
