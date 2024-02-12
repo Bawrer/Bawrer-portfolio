@@ -22,7 +22,7 @@ const Intro = () => {
             <li><a href="#about">About</a></li>
             
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#cert">Certificates</a></li>
+            <li><a href="#certificates">Certificates</a></li>
             <li><a href="#contact">Contact</a></li>
             <i className="fa-solid fa-xmark" onClick={closeMenu}></i>
           </ul>
@@ -35,6 +35,7 @@ const Intro = () => {
           <p>Fullstack software developer</p>
           <h1>Hi, I'm <span>Bonginkosi</span><br /> Zweni From South Africa</h1>
         </div>
+         
       </div>
     </header>
   );

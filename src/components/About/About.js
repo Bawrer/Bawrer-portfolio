@@ -18,7 +18,9 @@ const About = () => {
             {/* Displaying the image */}
             <img src={aboutImage} alt="profile" className="about-image" />
             {/* Button to download CV */}
-            <button className="download-cv-button">Download CV</button>
+            <a href="/Bonginkosi's CV.pdf" download className="btn btn2">
+              Download My CV
+            </a>
           </div>
           <div className="about-col-2">
             <h1 className="sub-title">Get to know me</h1>

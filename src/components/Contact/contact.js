@@ -47,10 +47,22 @@ const Contact = () => {
             <p>
               <i className="fa-solid fa-phone"></i>0640262483
             </p>
+            <p>
+                3586
+            </p>
+            <p>
+               Bardale
+            </p>
+            <p>
+               Mfuleni
+            </p>
+            <p>
+                 cape town
+            </p>
+            <p>
+               7100
+            </p>
             
-            <a href="/Bonginkosi's CV.pdf" download className="btn btn2">
-              Download My CV
-            </a>
           </div>
           <div className="contact-right">
             <form onSubmit={handleSubmit}>
@@ -80,6 +92,10 @@ const Contact = () => {
             </form>
             <span id="msg">{msg}</span>
           </div>
+
+          <div class="copyright">
+      <p>@All rights reserved by Zweni Bonginkosi 2024<i class="fa-solid fa-heart"></i>  </p>
+   </div>
         </div>
       </div>
     </div>
