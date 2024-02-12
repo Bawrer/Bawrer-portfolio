@@ -50,22 +50,23 @@ const Contact = () => {
             <p>
               <i className="fa-solid fa-phone"></i>0640262483
             </p>
-            <p>
+            <p><i class="fa-solid fa-location-dot"></i>
                 3586
             </p>
-            <p>
-               Bardale
-            </p>
-            <p>
-               Mfuleni
-            </p>
-            <p>
-                 cape town
-            </p>
-            <p>
-               7100
-            </p>
-            
+              <pre>
+               <p>
+                  Bardale
+                </p>
+                <p>
+                  Mfuleni
+                </p>
+                <p>
+                    cape town
+                </p>
+                <p>
+                  7100
+                </p>
+            </pre>
           </div>
           <div className="contact-right">
             <form onSubmit={handleSubmit}>
