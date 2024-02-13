@@ -48,7 +48,7 @@ const Contact = () => {
           <h1 className="sub-title">Get linkup with me</h1>
           <div className='left-and-right'>
             <div className="contact-left">
-              <p><i className="fa-solid fa-paper-plane"></i><a href='mailto:zwenibonginkosi@gmail.com'>zwenibonginkosi@gmail.com</a></p>
+              <p><i className="fa-solid fa-paper-plane"></i> zwenibonginkosi@gmail.com </p>
               <p><i className="fa-solid fa-phone"></i>0640262483</p>
               <p><i className="fa-solid fa-location-dot"></i>35861 Bardale</p>
               <pre>
