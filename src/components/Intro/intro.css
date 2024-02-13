@@ -9,6 +9,7 @@
 
 .container{
    padding: 10px 10%;
+   position: relative;
   
 }
 
@@ -20,9 +21,8 @@ nav{
     
    position: fixed;
   top: 0;
-  
   width: 100%;
-  z-index: 1000;
+   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.993); /* Adjust the background color as needed */
 
 }
@@ -127,12 +127,6 @@ nav ul li a:hover::after{
    z-index: -1;
  }
  
- .container {
-   /* Make sure your content doesn't overlap with the video */
-   position: relative;
-   z-index: 1;
- }
-
  .social-header{
    display: flex;
    justify-content: center;

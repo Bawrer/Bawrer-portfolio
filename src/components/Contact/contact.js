@@ -51,12 +51,9 @@ const Contact = () => {
               <i className="fa-solid fa-phone"></i>0640262483
             </p>
             <p><i class="fa-solid fa-location-dot"></i>
-                3586
+                35861  Bardale
             </p>
               <pre>
-               <p>
-                  Bardale
-                </p>
                 <p>
                   Mfuleni
                 </p>
