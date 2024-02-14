@@ -28,7 +28,7 @@ const Intro = () => {
           <img src="/images" alt="" className="logo" />
           <ul id={menuOpen ? 'sidemenu open' : 'sidemenu'}>
             <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">Abouts</a></li>
             
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#certificates">Certificates</a></li>
