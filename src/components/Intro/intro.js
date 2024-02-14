@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './intro.css';
  
+ 
 
 
 const Intro = () => {
@@ -17,9 +18,14 @@ const Intro = () => {
   return (
     <header id="header">
 
+<video autoPlay muted loop id="video-background">
+        <source src= {video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       <div className="container">
         <nav>
-          <img src="/images" alt="" className="logo" />
+          
           <ul id={menuOpen ? 'sidemenu open' : 'sidemenu'}>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>

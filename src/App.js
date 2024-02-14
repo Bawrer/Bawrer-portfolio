@@ -10,7 +10,7 @@ import Contact from "./components/Contact/contact";
 function App() {
   return (
     <div className="App">
-      <Intro/> /* landing page */ 
+      <Intro/>
        <About/>
        <Portfolio/>
        <Cerificates/>
