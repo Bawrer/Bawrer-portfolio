@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './intro.css';
- 
+import video from '../../assets/Back_video (1).mp4'
  
 
 
@@ -25,10 +25,10 @@ const Intro = () => {
 
       <div className="container">
         <nav>
-          
+          <img src="/images" alt="" className="logo" />
           <ul id={menuOpen ? 'sidemenu open' : 'sidemenu'}>
             <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">Abouts</a></li>
             
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#certificates">Certificates</a></li>
