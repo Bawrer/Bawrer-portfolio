@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './intro.css';
-import video from '../../assets/Back_video (1).mp4'
+import video from '../../assets/Back_video (1).mp4';
  
 
 

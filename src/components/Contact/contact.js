@@ -1,6 +1,7 @@
 import emailjs from 'emailjs-com'; // Import Email.js library
 import React, { useState } from 'react';
 import './contact.css';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,17 +29,30 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      // Send email using Email.js
-      emailjs.sendForm('service_buqghte', 'template_b7ap1p3', e.target, 'TyJwVDyeaaOkUE4R8')
-        .then((result) => {
-          console.log('Email sent successfully:', result.text);
-          setMsg('Message sent successfully');
-        }, (error) => {
-          console.error('Email sending failed:', error.text);
-          setMsg('Failed to send message');
-        });
+    if (!validateForm()) return; // If form validation fails, do not submit
+
+    // Check if reCAPTCHA is verified
+    if (!reCAPTCHAVerified) {
+      setMsg('Please verify that you are not a robot');
+      return;
     }
+
+    // Send email using Email.js
+    emailjs.sendForm('service_buqghte', 'template_b7ap1p3', e.target, 'TyJwVDyeaaOkUE4R8')
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setMsg('Message sent successfully');
+      }, (error) => {
+        console.error('Email sending failed:', error.text);
+        setMsg('Failed to send message');
+      });
+  };
+
+  const [reCAPTCHAVerified, setReCAPTCHAVerified] = useState(false);
+
+  const handleReCAPTCHAChange = (response) => {
+    // Called when reCAPTCHA verification is successful
+    setReCAPTCHAVerified(true);
   };
 
   return (
@@ -80,6 +94,11 @@ const Contact = () => {
                   value={message}
                   onChange={handleChange}
                 ></textarea>
+
+                <ReCAPTCHA
+                  sitekey="6LeqsXIpAAAAABapuWM3lvuiFJZbP5vZHFEpS8l5"
+                  onChange={handleReCAPTCHAChange}
+                />
                 <button type="submit" className="btn btn2">Submit</button>
               </form>
               <span id="msg">{msg}</span>
