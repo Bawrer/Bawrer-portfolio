@@ -1,20 +1,14 @@
 #contact{
    display: flex;
    justify-content: space-between;
-   padding: 0;
-   margin: 50px;
 }
  .contact-left{
 
-flex-basis: 45%;
+flex-basis: 35%;
 
-}
-
-.left-and-right{
-   display: flex;
 }
 .contact-right{
-   flex-basis: 50%;
+   flex-basis: 60%;
 }
 
 .contact-left p{
