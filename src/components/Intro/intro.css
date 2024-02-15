@@ -22,10 +22,11 @@ nav {
    flex-wrap: wrap;
    position: fixed;
    top: 0;
-   right: 3rem; /* Aligns the nav to the right of the screen */
+   right: 2rem; /* Aligns the nav to the right of the screen */
    width: 100%;
    z-index: 1000;
    background-color: rgba(0, 0, 0, 0.993);
+   padding: 2rem;
  }
  
 nav ul li{
@@ -155,10 +156,10 @@ nav ul li a:hover::after{
      justify-content: center;
      position: fixed;
      top: 0;
-     right: 2rem;
+     right: 0rem;
      width: 10%;
      height: 70%;
      background: #110c0c;
-     padding: 50px 0;
+     padding: 50px 50px;
    }
  }
