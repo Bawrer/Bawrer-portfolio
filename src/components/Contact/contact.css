@@ -1,6 +1,8 @@
 #contact{
    display: flex;
    justify-content: space-between;
+   padding: 0;
+   margin: 50px;
 }
  .contact-left{
 
@@ -109,34 +111,7 @@ pre{
    .header-text h1{
       font-size: 30px;
    }
-   nav .fa-solid{
-      display: block;
-      font-size: 25px;
-     }
-   
-     nav ul{
-      background: #4a838d;
-      position: fixed;
-      top: 0;
-      right: -200px;
-      width: 100px;
-      height: 100vh;
-      padding-top: 50px; 
-      z-index: 2;
-      transition: right 0.9s;
-     }
-   
-     nav ul li{
-      display: block;
-      margin: 25px;
-     }
-   
-     nav ul .fa-solid{
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      cursor: pointer;
-   }
+ 
    .sub-title{
       font-size: 40px;
       
@@ -150,19 +125,12 @@ pre{
    .about-col-2{
       font-size: 14px;
    }
-   .tab-links{
-      font-size: 14px;
-      margin-right: 20px;
-   }
+   
    .contact-left, .contact-right{
      flex-basis: 100%; 
    }
    
-   @media only screen and (max-width: 600px) {
-      nav {
-        position: relative;
-      }
-    }
+  
     @media (max-width: 768px) {
       .menu-icon-bars {
         display: block; /* Display the menu icon on small screens */

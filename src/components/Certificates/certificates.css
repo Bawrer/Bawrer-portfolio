@@ -2,6 +2,7 @@
    padding: 50px 0;
    margin: 50px;
    color: rgb(255, 255, 255);
+   background:#bda5ac;
 }
 
 .cert-list{
@@ -74,18 +75,14 @@
    display: block;
    margin: 50px auto;
    width:max-content;
-   border: 1px solid #bda5ac;
+   border: 1px solid #ac3c5c;
    padding: 14px 50px;
    border-radius: 6px;
    text-decoration: none;
-   color: #fff;
+   color: #000000;
    transition:  background o.5s;
 }
 
 .btn:hover{
    background: #359199;
-}
-
-@media only screen and (max-width: 600px){
-   
 }
