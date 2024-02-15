@@ -155,9 +155,9 @@ nav ul li a:hover::after{
      justify-content: center;
      position: fixed;
      top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
+     right: 2rem;
+     width: 10%;
+     height: 70%;
      background: #110c0c;
      padding: 50px 0;
    }
