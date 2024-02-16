@@ -12,6 +12,10 @@ const Intro = () => {
     setMenuOpen((prevState) => !prevState);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header id="header">
       <video autoPlay muted loop id="video-background">
@@ -22,11 +26,17 @@ const Intro = () => {
       <div className="container">
         <nav>
           <ul className={menuOpen ? "sidemenu open" : "sidemenu"}>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">Abouts</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+          {menuOpen && (
+              <li className="close-icon" onClick={toggleMenu}>
+                <FontAwesomeIcon icon={faTimes} className="menu-icon-close" />
+              </li>
+            )}
+            <li><a href="#header" onClick={closeMenu}>Home</a></li>
+            <li><a href="#about" onClick={closeMenu}>About</a></li>
+            <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
+            <li><a href="#certificates" onClick={closeMenu}>Certificates</a></li>
+            <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
           </ul>
           <div className="menu-icon">
             <FontAwesomeIcon

@@ -157,8 +157,8 @@ nav ul li a:hover::after{
      position: fixed;
      top: 0;
      right: 0rem;
-     width: 10%;
-     height: 70%;
+     width: 2%;
+     height: 40%;
      background: #110c0c;
      padding: 50px 50px;
    }
