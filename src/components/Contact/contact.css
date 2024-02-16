@@ -2,6 +2,12 @@
    display: flex;
    justify-content: space-between;
 }
+
+.left-and-right{
+   display:inline-flex;
+}
+
+
  .contact-left{
 
 flex-basis: 35%;
