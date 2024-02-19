@@ -1,23 +1,35 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes, faToggleOn, faToggleOff } from "@fortawesome/free-solid-svg-icons"; // Import the toggle icons
 import "./intro.css";
 import video from "../../assets/Back_video (1).mp4";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Intro = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [toggleState, setToggleState] = useState(false); // State to track the toggle button state
+  const [backgroundColor, setBackgroundColor] = useState("#fff"); // State to track background color
 
   const toggleMenu = () => {
-    setMenuOpen((prevState) => !prevState);
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
+  
+  
+
+  const toggleButton = () => {
+    setToggleState((prevState) => !prevState);
+    // Change background color based on toggle state
+    setBackgroundColor((prevState) => prevState ? "#fff" : "#f0f0f0"); // Change to desired colors
+  };
+  
+
   return (
-    <header id="header">
+    <header id="header" style={{ backgroundColor }}>
       <video autoPlay muted loop id="video-background">
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
@@ -26,12 +38,16 @@ const Intro = () => {
       <div className="container">
         <nav>
           <ul className={menuOpen ? "sidemenu open" : "sidemenu"}>
-
-          {menuOpen && (
+            {menuOpen && (
               <li className="close-icon" onClick={toggleMenu}>
                 <FontAwesomeIcon icon={faTimes} className="menu-icon-close" />
               </li>
             )}
+            <li>
+              <button className="toggle-icon" onClick={toggleButton}>
+                <FontAwesomeIcon icon={toggleState ? faToggleOn : faToggleOff} /> {/* Toggle between on and off icons based on toggleState */}
+              </button>
+            </li>
             <li><a href="#header" onClick={closeMenu}>Home</a></li>
             <li><a href="#about" onClick={closeMenu}>About</a></li>
             <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
@@ -55,8 +71,8 @@ const Intro = () => {
           </div>
 
           <div className="header-tex">
-            <p>Fullstack software developer</p>
             <h1>Hi, I'm <span>Bonginkosi</span><br /> Zweni From South Africa</h1>
+            <p>junior software developer</p>
           </div>
         </div>
       </div>

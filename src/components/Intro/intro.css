@@ -1,5 +1,5 @@
 #header{
-   position:relative;
+ 
    width: 100%;
    height: 100vh;
     background-position: center;
@@ -7,6 +7,12 @@
     background-size: cover;
     
      
+}
+.toggle-icon {
+  font-size: 40px; /* Adjust the size as needed */
+  color: white;
+  background-color: transparent;
+  border: transparent;
 }
 
 .container{
@@ -163,3 +169,4 @@ nav ul li a:hover::after{
      padding: 50px 50px;
    }
  }
+ 
