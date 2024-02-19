@@ -26,14 +26,7 @@ body{
    }
 }
 
-
-
-@media screen and (max-width:840px){
-   .bg{
-      right: -20vw;
-   }
-   
-}
+ 
 
 @media only screen and (max-width: 600px){
   
@@ -102,5 +95,7 @@ body{
         position: relative;
       }
     }
+
+    
     
    }

@@ -59,18 +59,21 @@ const Contact = () => {
     <div id="contact">
       <div className="container">
         <div className="row">
+        <div className="contact-left">
           <h1 className="sub-title">Get linkup with me</h1>
-          <div className='left-and-right'>
-            <div className="contact-left">
+         
               <p><i className="fa-solid fa-paper-plane"></i> zwenibonginkosi@gmail.com </p>
               <p><i className="fa-solid fa-phone"></i>0640262483</p>
               <p><i className="fa-solid fa-location-dot"></i>35861 Bardale</p>
-              <pre>
-                <p>Mfuleni</p>
-                <p>cape town</p>
-                <p>7100</p>
-              </pre>
+              
+                  <pre>
+                    <p>Mfuleni</p>
+                    <p>cape town</p>
+                    <p>7100</p>
+                  </pre>
             </div>
+
+
             <div className="contact-right">
               <form onSubmit={handleSubmit}>
                 <input
@@ -109,7 +112,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 
