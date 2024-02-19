@@ -17,7 +17,7 @@ const Intro = () => {
   };
 
   return (
-    <section id="header">
+    <header id="header">
       <video autoPlay muted loop id="video-background">
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
@@ -60,7 +60,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 

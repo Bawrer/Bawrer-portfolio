@@ -3,6 +3,7 @@
    color: #ababab;
    height: 100%;
    margin: 0;
+   
  }
  
  .row {
@@ -109,6 +110,11 @@
  .tab-links{
     font-size: 14px;
     margin-right: 20px;
+ }
+
+ .row {
+  position:relative;
+   
  }
 }
  
