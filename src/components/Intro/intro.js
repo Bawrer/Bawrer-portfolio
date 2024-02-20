@@ -8,7 +8,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Intro = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [toggleState, setToggleState] = useState(false); // State to track the toggle button state
-  const [backgroundColor, setBackgroundColor] = useState("#fff"); // State to track background color
+  const [backgroundColor, setBackgroundColor] = useState("#0000"); // State to track background color
 
   const toggleMenu = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);

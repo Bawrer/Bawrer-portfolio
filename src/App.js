@@ -3,6 +3,7 @@ import Cerificates from "./components/Certificates/certificates";
 import Intro from "./components/Intro/intro";
 import Portfolio from "./components/Portfolio/portfolio";
 import Contact from "./components/Contact/contact";
+import Footer from "./components/footer/footer";
 
 
 
@@ -15,6 +16,7 @@ function App() {
        <Portfolio/>
        <Cerificates/>
        <Contact/>
+       <Footer/>
     </div>
   )
 }

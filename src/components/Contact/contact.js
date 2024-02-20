@@ -97,9 +97,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="copyright">
-        <p>@All rights reserved by Zweni Bonginkosi 2024 <i className="fa-solid fa-heart"></i></p>
-      </div>
+       
     </div>
   );
 };
