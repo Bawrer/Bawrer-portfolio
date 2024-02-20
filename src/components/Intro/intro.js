@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faToggleOn, faToggleOff } from "@fortawesome/free-solid-svg-icons";
 import "./intro.css";
 import video from "../../assets/Back_video (1).mp4";
+ 
 
 const Intro = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -70,6 +71,7 @@ const Intro = () => {
           <div className="header-tex">
             <h1>Hi, I'm <span>Bonginkosi</span><br /> Zweni From South Africa</h1>
             <p>junior software developer</p>
+            
           </div>
         </div>
       </div>

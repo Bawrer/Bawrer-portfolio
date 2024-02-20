@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import './contact.css';
 
@@ -90,6 +90,8 @@ const Contact = () => {
               <ReCAPTCHA
                 sitekey="6LeqsXIpAAAAABapuWM3lvuiFJZbP5vZHFEpS8l5"
                 onChange={handleReCAPTCHAChange}
+                size='compact'
+                explicit
               />
               <button type="submit" className="btn btn2">Submit</button>
             </form>
