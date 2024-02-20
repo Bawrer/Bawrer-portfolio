@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import aboutImage from '../../assets/IMG-20231216-WA0080.jpg'; // Importing the image
-import './About.css'
-import cv from '../../assets/Bonginkosi.pdf'
- 
- 
- 
-const About = () => {
+import './About.css';
+import cv from '../../assets/Bonginkosi.pdf';
+
+const About = ({ backgroundColor }) => {
   const [activeTab, setActiveTab] = useState('skills');
 
   const openTab = (tab) => {
@@ -13,21 +11,20 @@ const About = () => {
   };
 
   return (
-    <div className="about" id="about">
+    <div className="about" id="about" style={{ backgroundColor }}>
       <div className="container">
         <div className="row">
           <div className="about-col-1">
             {/* Displaying the image */}
             <img src={aboutImage} alt="profile" className="about-image" />
             {/* Button to download CV */}
-            <a href= {cv} download className="btn btn2">
+            <a href={cv} download className="btn btn2">
               Download My CV
             </a>
           </div>
           <div className="about-col-2">
             <h1 className="sub-title">Get to know me</h1>
             <div className="tab-titles">
-            
               {/* Your tab links */}
               <p
                 className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}

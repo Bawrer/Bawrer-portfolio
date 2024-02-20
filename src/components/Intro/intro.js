@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes, faToggleOn, faToggleOff } from "@fortawesome/free-solid-svg-icons"; // Import the toggle icons
+import { faBars, faTimes, faToggleOn, faToggleOff } from "@fortawesome/free-solid-svg-icons";
 import "./intro.css";
 import video from "../../assets/Back_video (1).mp4";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Intro = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [toggleState, setToggleState] = useState(false); // State to track the toggle button state
-  const [backgroundColor, setBackgroundColor] = useState("#0000"); // State to track background color
+  const [toggleState, setToggleState] = useState(false);
+  const [backgroundColor, setBackgroundColor] = useState("#0000");
 
   const toggleMenu = () => {
     setMenuOpen((prevMenuOpen) => !prevMenuOpen);
@@ -18,15 +17,13 @@ const Intro = () => {
     setMenuOpen(false);
   };
 
-  
-  
-
   const toggleButton = () => {
     setToggleState((prevState) => !prevState);
-    // Change background color based on toggle state
-    setBackgroundColor((prevState) => prevState ? "#fff" : "#f0f0f0"); // Change to desired colors
+    const colors = ["#808080", "transparent"]; // Define an array of colors
+    const currentIndex = colors.findIndex(color => color === backgroundColor);
+    const nextIndex = (currentIndex + 1) % colors.length;
+    setBackgroundColor(colors[nextIndex]);
   };
-  
 
   return (
     <header id="header" style={{ backgroundColor }}>
@@ -45,7 +42,7 @@ const Intro = () => {
             )}
             <li>
               <button className="toggle-icon" onClick={toggleButton}>
-                <FontAwesomeIcon icon={toggleState ? faToggleOn : faToggleOff} /> {/* Toggle between on and off icons based on toggleState */}
+                <FontAwesomeIcon icon={toggleState ? faToggleOn : faToggleOff} />
               </button>
             </li>
             <li><a href="#header" onClick={closeMenu}>Home</a></li>
