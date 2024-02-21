@@ -71,8 +71,11 @@ const Intro = () => {
           <div className="header-tex">
             <h1>Hi, I'm <span>Bonginkosi</span><br /> Zweni From South Africa</h1>
             <p>junior software developer</p>
+
+           
             
           </div>
+
         </div>
       </div>
     </header>

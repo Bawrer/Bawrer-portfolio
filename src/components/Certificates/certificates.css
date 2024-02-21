@@ -87,3 +87,13 @@
 .btn:hover{
    background: #359199;
 }
+@media only screen and (max-width: 600px) {
+   .subtitle {
+     font-size: xx-small;
+
+   }
+   .container{
+      font-size: xx-small;
+      margin: 0;
+   }
+}

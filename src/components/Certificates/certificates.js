@@ -1,7 +1,7 @@
 import React from 'react';
- import './certificates.css'
- import img1 from '../../assets/git (1).png'
- import img2 from '../../assets/b24465f8-60b0-421d-b868-be8f9dcd508d.jpg'
+import img2 from '../../assets/b24465f8-60b0-421d-b868-be8f9dcd508d.jpg';
+import img1 from '../../assets/git (1).png';
+import './certificates.css';
  
  
 

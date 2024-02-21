@@ -71,8 +71,7 @@ body{
       cursor: pointer;
    }
    .sub-title{
-      font-size: 40px;
-      
+      font-size: 20px;
    }
    .about-col-1, .about-col-2{
       flex-basis: 100%;

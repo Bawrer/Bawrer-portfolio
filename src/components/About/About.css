@@ -32,9 +32,10 @@
  }
  
  .sub-title {
-   font-size: 60px;
+   font-size: 30px;
    font-weight: 600;
    color: #fff;
+   align-items: center;
  }
  
  .tab-titles {
