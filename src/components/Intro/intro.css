@@ -92,25 +92,13 @@ nav ul li a:hover::after{
    color: #f00466; /* Text color for the logo on hover */
  }
  
- @media (max-width: 768px) {
-   #hamburger-menu {
-     display: block;
-   }
- 
-   #menu-links {
-     display: none;
-   }
- 
-   #hamburger-input:checked ~ #menu-links {
-     display: block;
-   }
- }
+
 
  .social-icons{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   gap: 3rem; 
+   gap: 3rem;
 }
 
 .social-icons a{
@@ -164,6 +152,29 @@ nav ul li a:hover::after{
      background: #110c0c;
      padding: 50px 50px;
    }
+
+   #hamburger-menu {
+    display: block;
+  }
+
+  #menu-links {
+    display: none;
+  }
+
+  #hamburger-input:checked ~ #menu-links {
+    display: block;
+  }
+
+  
+ }
+
+ @media (max-width: 600px) {
+  
+  .container{
+    align-items: center;
+    flex-basis: 30%;
+    padding: 3rem;
+  }
  }
 
  @media only screen and (max-width: 600px) {
