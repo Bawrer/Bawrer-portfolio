@@ -2,7 +2,7 @@
    display: flex;
    justify-content: space-between;
    padding: 50px 0;
-   margin: 30px;
+   margin: 3px;
 }
  .contact-left{
 
@@ -76,7 +76,7 @@ form btn2{
    .container {
      align-items: center;
      margin: 0;
-     padding: 0;
+   
    }
    .contact-right{
       flex-basis: 90%;

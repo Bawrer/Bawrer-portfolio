@@ -140,7 +140,7 @@ nav ul li a:hover::after {
     top: 0;
     right: 0rem;
     width: 2%;
-    height: 40%;
+    height: 50%;
     background: #110c0c;
     padding: 50px 50px;
   }
