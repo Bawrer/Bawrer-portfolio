@@ -80,11 +80,12 @@
    padding: 14px 50px;
    border-radius: 6px;
    text-decoration: none;
-   color: #fff;
+   color: #ffffff;
    transition:  background o.5s;
+   background-color: rgb(107, 119, 110);
 }
 
 .btn:hover{
-   background: #359199;
+   background: #c8d3d4;
 }
  

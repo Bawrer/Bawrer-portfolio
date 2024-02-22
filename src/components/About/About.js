@@ -78,7 +78,15 @@ const About = ({ backgroundColor }) => {
                   <br />
                   I am a candidate at CAPACITI career Tech Accelerator
                   <br />
-                  2023-224
+                  2023-2024
+                  </li>
+                  <li>
+                  <span>Current job</span>
+                <br/>
+                 I am a currently working as a junior software developer at youglings africa for ABSA.
+               
+                  <br />
+                  2024-2025
                 </li>
               </ul>
             </div>
