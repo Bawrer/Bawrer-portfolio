@@ -11,6 +11,7 @@ const Contact = () => {
   });
 
   const [msg, setMsg] = useState('');
+  const [reCAPTCHAVerified, setReCAPTCHAVerified] = useState(false);
 
   const { name, email, message } = formData;
 
@@ -19,8 +20,20 @@ const Contact = () => {
   };
 
   const validateForm = () => {
+    const nameRegex = /^[a-zA-Z\s]*$/; // Only letters and spaces
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (name === '' || email === '' || message === '') {
       setMsg('Please fill all fields');
+      return false;
+    } else if (!nameRegex.test(name)) {
+      setMsg('Name can only contain letters and spaces');
+      return false;
+    } else if (/\d/.test(name)) {
+      setMsg('Name cannot contain numbers');
+      return false;
+    } else if (!emailRegex.test(email)) {
+      setMsg('Please enter a valid email address');
       return false;
     }
     setMsg('');
@@ -36,18 +49,22 @@ const Contact = () => {
       return;
     }
 
-    emailjs.sendForm('service_buqghte', 'template_b7ap1p3', e.target, 'TyJwVDyeaaOkUE4R8')
+    emailjs
+      .sendForm('service_buqghte', 'template_b7ap1p3', e.target, 'TyJwVDyeaaOkUE4R8')
       .then((result) => {
         console.log('Email sent successfully:', result.text);
         setMsg('Message sent successfully');
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        }); // Clear form fields
       })
       .catch((error) => {
         console.error('Email sending failed:', error.text);
         setMsg('Failed to send message');
       });
   };
-
-  const [reCAPTCHAVerified, setReCAPTCHAVerified] = useState(false);
 
   const handleReCAPTCHAChange = (response) => {
     setReCAPTCHAVerified(true);
@@ -59,9 +76,15 @@ const Contact = () => {
         <div className="row">
           <div className="contact-left">
             <h1 className="sub-title">Get linkup with me</h1>
-            <p><i className="fa-solid fa-paper-plane"></i> zwenibonginkosi@gmail.com </p>
-            <p><i className="fa-solid fa-phone"></i>0640262483</p>
-            <p><i className="fa-solid fa-location-dot"></i> Mfuleni, Cape Town, 7100 </p>
+            <p>
+              <i className="fa-solid fa-paper-plane"></i> zwenibonginkosi@gmail.com{' '}
+            </p>
+            <p>
+              <i className="fa-solid fa-phone"></i>0640262483
+            </p>
+            <p>
+              <i className="fa-solid fa-location-dot"></i> Mfuleni, Cape Town, 7100{' '}
+            </p>
           </div>
 
           <div className="contact-right">
@@ -74,7 +97,7 @@ const Contact = () => {
                 onChange={handleChange}
               />
               <input
-                type="email"
+              
                 name="email"
                 placeholder="Your Email"
                 value={email}
@@ -90,17 +113,17 @@ const Contact = () => {
               <ReCAPTCHA
                 sitekey="6LeqsXIpAAAAABapuWM3lvuiFJZbP5vZHFEpS8l5"
                 onChange={handleReCAPTCHAChange}
-                size='compact'
+                size="compact"
                 explicit
-                 
               />
-              <button type="submit" className="btn btn2">Submit</button>
+              <button type="submit" className="btn btn2">
+                Submit
+              </button>
             </form>
             <span id="msg">{msg}</span>
           </div>
         </div>
       </div>
-       
     </div>
   );
 };
