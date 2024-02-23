@@ -2,7 +2,7 @@
    display: flex;
    justify-content: space-between;
    padding: 50px 0;
-   margin: 3px;
+   margin: 30px;
 }
  .contact-left{
 
@@ -10,7 +10,7 @@ flex-basis: 30%;
 
 }
 .contact-right{
-   flex-basis: 68%;
+   flex-basis: 70%;
 }
 
 .contact-left p{
@@ -73,15 +73,66 @@ form btn2{
 }
 
 @media only screen and (max-width: 600px) {
-   .container {
-     align-items: center;
-     margin: 0;
-   
-   }
-   .contact-right{
-      flex-basis: 90%;
-   }
+   .row {
+      font-size: xx-small;
+      margin: 24px;
+      padding: 2px;
+      
+     }
+      .contact{
+        padding: 24px;
+      }
+    
+      .contact-right{
+        padding: 24px;
+      }
 }
 
 
 
+
+
+
+#contact {
+   display: flex;
+   justify-content: flex-start;
+   background: 
+     linear-gradient(black, black) padding-box, 
+     linear-gradient(145deg, transparent 25%, #9e9ba0 26%, #7d073e 75%) border-box; 
+   border: 3px solid transparent;
+   background-size: 200% 100%;
+   animation: moveGradient 2s linear infinite;
+   margin: 3rem;
+   
+    
+ }
+ 
+ @keyframes moveGradient {
+   0% {
+     background-position: 0 0;  
+   }
+   100% {
+     background-position: 200% 0;  
+   }
+ }
+
+ .scroll-to-top-btn {
+   position: fixed;
+   bottom: 40px;
+   right: 20px;
+   background-color: #344e41;
+   color: #ffffff;
+   border: none;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   font-size: 10px;
+   cursor: pointer;
+   outline: none;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .scroll-to-top-btn:hover {
+   background-color: #0056b3;
+ }
+ 

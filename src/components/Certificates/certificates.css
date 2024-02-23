@@ -2,7 +2,7 @@
    padding: 50px 0;
    margin: 50px;
    color: rgb(255, 255, 255);
-   background:#212325;
+   background:#20042c;
    z-index: 999;
 }
 
@@ -76,7 +76,7 @@
    display: block;
    margin: 50px auto;
    width:max-content;
-   border: 1px solid #000000;
+   border: 1px solid #686465;
    padding: 14px 50px;
    border-radius: 6px;
    text-decoration: none;
@@ -89,22 +89,21 @@
 }
 @media only screen and (max-width: 600px) {
    .subtitle {
-     font-size: x-small;
-     align-items: center;
+     font-size: xx-small;
 
    }
    .container{
       font-size: xx-small;
-      margin: 0;
+      margin: 3px;
    }
 
-   #certificates {  
-      color: rgb(255, 255, 255);
-      background: #bda5ac;
-      padding: 0;
-  }
-}
+   #certificates{
+      font-size: xx-small;
+      margin: 24px;
+      padding: 2px;
+   }
 
-.subt-itle{
-   align-items: center;
+   .cert-list{
+      padding: 24px;
+   }
 }

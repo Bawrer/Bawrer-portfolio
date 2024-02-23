@@ -82,10 +82,24 @@
    text-decoration: none;
    color: #ffffff;
    transition:  background o.5s;
-   background-color: rgb(107, 119, 110);
+   background-color: rgb(116, 124, 126);
 }
 
 .btn:hover{
    background: #c8d3d4;
 }
  
+
+@media only screen and (max-width: 600px) {
+   
+
+   #portfolio{
+      font-size: xx-small;
+      margin: 24px;
+      padding: 2px;
+   }
+
+   .work-list{
+      padding: 24px;
+   }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import cv from '../../assets/Bonginkosi.pdf';
 import aboutImage from '../../assets/IMG-20231216-WA0080.jpg'; // Importing the image
 import './About.css';
-import cv from '../../assets/Bonginkosi.pdf';
 
 const About = ({ backgroundColor }) => {
   const [activeTab, setActiveTab] = useState('skills');

@@ -1,4 +1,3 @@
-import emailjs from 'emailjs-com';
 import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import './contact.css';
@@ -49,25 +48,18 @@ const Contact = () => {
       return;
     }
 
-    emailjs
-      .sendForm('service_buqghte', 'template_b7ap1p3', e.target, 'TyJwVDyeaaOkUE4R8')
-      .then((result) => {
-        console.log('Email sent successfully:', result.text);
-        setMsg('Message sent successfully');
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
-        }); // Clear form fields
-      })
-      .catch((error) => {
-        console.error('Email sending failed:', error.text);
-        setMsg('Failed to send message');
-      });
+    // Email sending logic
   };
 
   const handleReCAPTCHAChange = (response) => {
     setReCAPTCHAVerified(true);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -83,7 +75,7 @@ const Contact = () => {
               <i className="fa-solid fa-phone"></i>0640262483
             </p>
             <p>
-              <i className="fa-solid fa-location-dot"></i> Mfuleni, Cape Town, 7100{' '}
+              <i className="fa-solid fa-location-dot"></i> Cape Town{' '}
             </p>
           </div>
 
@@ -97,7 +89,7 @@ const Contact = () => {
                 onChange={handleChange}
               />
               <input
-              
+                type="email"
                 name="email"
                 placeholder="Your Email"
                 value={email}
@@ -124,6 +116,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <button className="scroll-to-top-btn" onClick={scrollToTop}>
+        Back to Top
+      </button>
     </div>
   );
 };

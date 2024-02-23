@@ -114,8 +114,17 @@
  }
 
  .row {
-  position:relative;
-   
+  font-size: xx-small;
+  margin: 24px;
+  padding: 2px;
+  
  }
+  .about-col-1{
+    padding: 24px;
+  }
+
+  .about-col-2{
+    padding: 24px;
+  }
 }
  
