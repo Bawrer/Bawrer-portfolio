@@ -87,11 +87,7 @@
 .btn:hover{
    background: #359199;
 }
-@media only screen and (max-width: 600px) {
-   .subtitle {
-     font-size: xx-small;
-
-   }
+ 
    .container{
       font-size: xx-small;
       margin: 3px;
@@ -106,4 +102,12 @@
    .cert-list{
       padding: 24px;
    }
-}
+
+   @media only screen and (max-width: 320px) {
+      .certificates {
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+      }
+    }
+    

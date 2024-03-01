@@ -46,7 +46,7 @@ const Intro = () => {
                 <FontAwesomeIcon icon={toggleState ? faToggleOn : faToggleOff} />
               </button>
             </li>
-            <li><a href="#header" onClick={closeMenu}>Ho  me</a></li>
+            <li><a href="#header" onClick={closeMenu}>Home</a></li>
             <li><a href="#about" onClick={closeMenu}>About</a></li>
             <li><a href="#portfolio" onClick={closeMenu}>Portfolio</a></li>
             <li><a href="#certificates" onClick={closeMenu}>Certificates</a></li>

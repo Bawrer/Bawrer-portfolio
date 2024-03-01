@@ -161,7 +161,7 @@ nav ul li a:hover::after {
 
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 10px;
+    padding: 4px;
     width: 100%;
     align-items: center;
   }
@@ -229,5 +229,14 @@ nav ul li a:hover::after {
     height: 100%;
     object-fit: cover; /* Ensures the video covers the entire container */
     z-index: -1;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .work {
+    padding: 10px;
+    width: 100%;
+    align-items: center;
   }
 }

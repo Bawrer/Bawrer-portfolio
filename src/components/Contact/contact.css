@@ -75,7 +75,7 @@ form btn2{
 @media only screen and (max-width: 600px) {
    .row {
       font-size: xx-small;
-      margin: 24px;
+      margin: 8px;
       padding: 2px;
       
      }
@@ -102,7 +102,7 @@ form btn2{
    border: 3px solid transparent;
    background-size: 200% 100%;
    animation: moveGradient 2s linear infinite;
-   margin: 3rem;
+   margin: 1.5 rem;
    
     
  }

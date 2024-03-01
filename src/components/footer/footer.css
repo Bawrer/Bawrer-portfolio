@@ -9,3 +9,42 @@
  .copyright i{
     color: #ff004f;
  }
+
+ /* Media Queries */
+@media only screen and (max-width: 768px) {
+   .copyright {
+     padding: 15px 0;
+   }
+ }
+
+ 
+
+ /* Media Queries */
+@media only screen and (max-width: 600px) {
+   .copyright {
+     padding: 10px 0;
+   }
+ }
+
+ /* Media Queries */
+@media only screen and (max-width: 375px) {
+   .copyright {
+     padding: 9px 0;
+   }
+ }
+
+ /* Media Queries */
+@media only screen and (max-width: 320px) {
+   .copyright {
+     padding: 5px 0;
+   }
+ }
+
+ 
+
+ @media only screen and (max-width: 320px) {
+   .btn {
+     padding: 5px 0;
+     width: 100%;
+   }
+ }
