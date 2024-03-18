@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faToggleOn, faToggleOff } from "@fortawesome/free-solid-svg-icons";
-import "./intro.css";
+import "./intro.css"; // Import the CSS file
 import video from "../../assets/Back_video (1).mp4";
- 
 
 const Intro = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,7 +42,7 @@ const Intro = () => {
             )}
             <li>
               <button className="toggle-icon" onClick={toggleButton}>
-                <FontAwesomeIcon icon={toggleState ? faToggleOn : faToggleOff} />
+                <FontAwesomeIcon icon={toggleState ? faToggleOn : faToggleOff} className="specific-menu-icon" />
               </button>
             </li>
             <li><a href="#header" onClick={closeMenu}>Home</a></li>
@@ -56,7 +55,7 @@ const Intro = () => {
             <FontAwesomeIcon
               icon={menuOpen ? faTimes : faBars}
               onClick={toggleMenu}
-              className="menu-icon-bars"
+              className="menu-icon-bars specific-menu-icon" // Add the specific class here
             />
           </div>
         </nav>
@@ -71,11 +70,7 @@ const Intro = () => {
           <div className="header-tex">
             <h1>Hi, I'm <span>Bonginkosi</span><br /> Zweni From South Africa</h1>
             <p>junior software developer</p>
-
-           
-            
           </div>
-
         </div>
       </div>
     </header>

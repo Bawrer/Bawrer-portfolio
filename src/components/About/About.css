@@ -62,7 +62,7 @@
    transition: 0.5s;
  }
  
- .tab-links.active-link::after {
+ .tab-links.active-link:hover::after {
    width: 50%;
  }
  

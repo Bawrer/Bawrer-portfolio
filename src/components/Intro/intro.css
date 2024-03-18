@@ -7,7 +7,7 @@
 }
 
 .toggle-icon {
-  font-size: 40px;
+  font-size: 50px; /* Adjust the font size to make the icons bigger */
   color: white;
   background-color: transparent;
   border: transparent;
@@ -18,7 +18,6 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  
 }
 
 nav {
@@ -48,18 +47,19 @@ nav ul li a {
 }
 
 nav ul li a::after {
-  content: '';
+  content: ''; /* Remove the content */
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: transparent; /* Set the initial background to transparent */
   left: 0;
   position: absolute;
-  bottom: -6px;
+  bottom: -1px;
   transition: 0.5s;
 }
 
 nav ul li a:hover::after {
   width: 100%;
+  background: #ff004f; /* Apply the background color only on hover */
 }
 
 .header-tex {
@@ -102,7 +102,7 @@ nav ul li a:hover::after {
   transition: transform 0.5s;
 }
 
-#header #video-background{
+#header #video-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -111,6 +111,7 @@ nav ul li a:hover::after {
   object-fit: cover; /* Ensures the video covers the entire container */
   z-index: -1;
 }
+
 .social-header {
   display: flex;
   justify-content: center;
@@ -141,7 +142,7 @@ nav ul li a:hover::after {
     top: 0;
     right: 0rem;
     width: 2%;
-    height: 50%;
+    height: 60%;
     background: #110c0c;
     padding: 50px 50px;
   }
@@ -209,7 +210,7 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 1200px) {
-  #header #video-background{
+  #header #video-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -221,7 +222,7 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 600px) {
-  #header #video-background{
+  #header #video-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -232,11 +233,19 @@ nav ul li a:hover::after {
   }
 }
 
-
 @media only screen and (max-width: 600px) {
   .work {
     padding: 10px;
     width: 100%;
     align-items: center;
   }
+
+   
+.specific-menu-icon, .social-icons {
+  font-size: 40px; 
+  color: white;
+   
 }
+}
+
+
